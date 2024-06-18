@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Orientasi Awal</string>
+
+    <string name='title0'>Orientasi Awal</string>
+    <string name='title1'>Tujuan Akademis</string>
+    <string name='title2'>Jadwal Kuliah</string>
+    <string name='title3'>Teman Baru</string>
+    <string name='title4'>Kegiatan Ekstrakurikuler</string>
+    <string name='title5'>Penugasan Pertama</string>
+    <string name='title6'>Refleksi Mingguan</string>
+    <string name='title7'>Motivasi Belajar</string>
+    <string name='title8'>Keterampilan Baru</string>
+    <string name='title9'>Kesehatan dan Kebugaran</string>
+    <string name='title10'>Manajemen Stres</string>
+    <string name='title11'>Proyek Kelompok</string>
+    <string name='title12'>Kebiasaan Belajar</string>
+    <string name='title13'>Buku Kuliah</string>
+    <string name='title14'>Relaksasi dan Hiburan</string>
+    <string name='title15'>Keuangan Mahasiswa</string>
+    <string name='title16'>Inspirasi dari Dosen</string>
+    <string name='title17'>Acara Kampus</string>
+    <string name='title18'>Refleksi Diri</string>
+    <string name='title19'>Waktu untuk Diri Sendiri</string>
+    <string name='title20'>Hubungan dengan Teman Sekamar</string>
+    <string name='title21'>Pembelajaran dari Kesalahan</string>
+    <string name='title22'>Impian Pascakuliah</string>
+    <string name='title23'>Persiapan Ujian</string>
+    <string name='title24'>Proyek Kreatif</string>
+    <string name='title25'>Koneksi dengan Alam</string>
+    <string name='title26'>Pembaruan Energi</string>
+    <string name='title27'>Evaluasi Diri</string>
+    <string name='title28'>Tindakan Nyata</string>
+    <string name='title29'>Perayaan dan Syukur</string>
+
+    <string name='desc0'>Catat pengalamanmu di hari pertama orientasi kampus. Apa yang membuatmu bersemangat?</string>
+    <string name='desc1'>Tuliskan tujuan akademismu untuk semester ini. Apa yang ingin kamu capai?</string>
+    <string name='desc2'>Buat daftar jadwal kuliah dan kegiatan ekstrakurikuler. Bagaimana kamu mengatur waktumu?</string>
+    <string name='desc3'>Catat nama dan kesan pertama dari teman baru yang kamu temui di kampus.</string>
+    <string name='desc4'>Tuliskan organisasi atau klub yang ingin kamu ikuti dan alasannya.</string>
+    <string name='desc5'>Tulis tentang penugasan pertama yang kamu terima dan bagaimana kamu merencanakan untuk menyelesaikannya.</string>
+    <string name='desc6'>Refleksi perjalanan minggu pertama di kampus. Apa yang telah kamu pelajari?</string>
+    <string name='desc7'>Tulis kutipan inspiratif atau alasan yang memotivasi kamu untuk belajar keras.</string>
+    <string name='desc8'>Catat keterampilan baru yang ingin kamu pelajari selama kuliah.</string>
+    <string name='desc9'>Tuliskan rencana sederhana untuk menjaga kesehatan dan kebugaranmu di tengah kesibukan kuliah.</string>
+    <string name='desc10'>Catat cara-cara yang kamu gunakan untuk mengelola stres selama kuliah.</string>
+    <string name='desc11'>Tulis tentang proyek kelompok yang sedang kamu kerjakan dan peranmu di dalamnya.</string>
+    <string name='desc12'>Catat kebiasaan belajar yang ingin kamu kembangkan atau perbaiki.</string>
+    <string name='desc13'>Tulis buku atau materi kuliah yang sedang atau ingin kamu baca dan alasannya.</string>
+    <string name='desc14'>Catat aktivitas relaksasi atau hiburan yang kamu lakukan untuk menghilangkan penat.</string>
+    <string name='desc15'>Tulis tentang bagaimana kamu mengelola keuangan pribadi sebagai mahasiswa.</string>
+    <string name='desc16'>Tulis tentang seorang dosen yang menginspirasi kamu dan mengapa.</string>
+    <string name='desc17'>Catat tentang acara kampus yang menarik perhatianmu dan mengapa.</string>
+    <string name='desc18'>Tulis refleksi tentang dirimu, kekuatan dan kelemahanmu sebagai mahasiswa.</string>
+    <string name='desc19'>Catat kegiatan yang kamu lakukan untuk diri sendiri hari ini.</string>
+    <string name='desc20'>Refleksi tentang hubungan dengan teman sekamarmu. Apa yang berjalan baik dan apa yang perlu diperbaiki?</string>
+    <string name='desc21'>Tulis tentang satu kesalahan yang kamu pelajari dan bagaimana itu membantumu tumbuh.</string>
+    <string name='desc22'>Catat impianmu setelah lulus dan langkah-langkah yang perlu kamu ambil untuk mencapainya.</string>
+    <string name='desc23'>Tulis tentang persiapan yang kamu lakukan untuk ujian mendatang.</string>
+    <string name='desc24'>Catat proyek kreatif yang ingin kamu mulai atau selesaikan di luar kegiatan akademis.</string>
+    <string name='desc25'>Tulis tentang pengalamanmu dengan alam hari ini. Apakah kamu pergi jalan-jalan atau menikmati taman kampus?</string>
+    <string name='desc26'>Catat cara-cara untuk memperbarui energi dan semangatmu di tengah kesibukan kuliah.</string>
+    <string name='desc27'>Evaluasi perjalanan 30 hari ini, apa yang berhasil dan apa yang perlu diperbaiki.</string>
+    <string name='desc28'>Tulis satu tindakan nyata yang telah kamu ambil menuju tujuan akademismu.</string>
+    <string name='desc29'>Catat pencapaian dan perubahan selama 30 hari ini. Rayakan dirimu dan bersyukurlah atas perjalanan yang telah kamu lalui di kampus.</string>
+
+    <string name="expand_button">Tombol Perluas untuk melihat deskripsi setiap hari</string>
+    <string name="days_30">Catatan 30 Hari</string>
+
+
+</resources>
