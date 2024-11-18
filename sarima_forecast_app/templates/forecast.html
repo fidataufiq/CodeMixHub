@@ -1,0 +1,53 @@
+{% extends "base.html" %} {% block content %}
+<h1>Forecast Penjualan</h1>
+
+<!-- Form Input Jumlah Periode -->
+<form method="POST" class="mb-4">
+  <div class="form-group">
+    <label for="steps">Jumlah Periode yang Diprediksi (Bulan)</label>
+    <input type="number" name="steps" id="steps" class="form-control" placeholder="Masukkan jumlah bulan (contoh: 12)" required />
+  </div>
+  <button type="submit" class="btn btn-primary mt-2">Prediksi</button>
+</form>
+
+<!-- Tabel Hasil Forecast -->
+{% if data %}
+<h2>Hasil Forecast</h2>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Bulan</th>
+      <th>Tahun</th>
+      <th>Porsi Penjualan</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in data %}
+    <tr>
+      <td>{{ row.no }}</td>
+      <td>{{ row.month }}</td>
+      <td>{{ row.year }}</td>
+      <td>{{ row.porsi|round(2) }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+<!-- Grafik Forecast -->
+{% if actual_data and forecast_data %}
+<h2>Grafik Forecast</h2>
+<div id="forecast-plot"></div>
+<script src="https://cdn.plot.ly/plotly-2.16.1.min.js"></script>
+<script>
+  // Load forecast plot only if forecast data exists
+  fetch(`/forecast_plot?steps={{ data|length }}`)
+    .then((response) => response.json())
+    .then((plotData) => {
+      Plotly.newPlot("forecast-plot", plotData.data, plotData.layout);
+    });
+</script>
+{% else %}
+<p>Silakan masukkan jumlah periode prediksi untuk melihat hasil forecast.</p>
+{% endif %} {% endblock %}

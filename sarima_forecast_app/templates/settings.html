@@ -1,0 +1,104 @@
+{% extends "base.html" %} {% block content %}
+<h1>Edit Data Penjualan Bulanan</h1>
+
+<!-- Tombol Tambah Bulan -->
+<button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#addModal">Tambah Bulan</button>
+
+<!-- Tabel Data -->
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Bulan</th>
+      <th>Tahun</th>
+      <th>Porsi Penjualan</th>
+      <th>Aksi</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in data %}
+    <tr>
+      <td>{{ row.no }}</td>
+      <td>{{ row.month }}</td>
+      <td>{{ row.year }}</td>
+      <td>{{ row.porsi }}</td>
+      <td>
+        <!-- Tombol Edit -->
+        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editModal" data-index="{{ row.index }}" data-value="{{ row.porsi }}">Edit</button>
+        <!-- Tombol Hapus -->
+        <form method="POST" style="display: inline">
+          <input type="hidden" name="action" value="delete" />
+          <input type="hidden" name="index" value="{{ row.index }}" />
+          <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<!-- Modal Tambah Bulan -->
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addModalLabel">Tambah Bulan Baru</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form method="POST">
+        <div class="modal-body">
+          <input type="hidden" name="action" value="add" />
+          <div class="form-group">
+            <label for="newValueInputAdd">Jumlah Penjualan (Porsi)</label>
+            <input type="number" id="newValueInputAdd" name="new_value" class="form-control" required />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+          <button type="submit" class="btn btn-success">Tambah Bulan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Edit Bulan -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editModalLabel">Edit Data Penjualan</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form method="POST">
+        <div class="modal-body">
+          <input type="hidden" name="action" value="update" />
+          <input type="hidden" id="indexInputEdit" name="index" />
+          <div class="form-group">
+            <label for="newValueInputEdit">Jumlah Penjualan (Porsi)</label>
+            <input type="number" id="newValueInputEdit" name="new_value" class="form-control" required />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+          <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Script untuk Modal -->
+<script>
+  const editModal = document.getElementById("editModal");
+  editModal.addEventListener("show.bs.modal", function (event) {
+    const button = event.relatedTarget;
+    const index = button.getAttribute("data-index");
+    const value = button.getAttribute("data-value");
+
+    document.getElementById("indexInputEdit").value = index;
+    document.getElementById("newValueInputEdit").value = value;
+  });
+</script>
+
+{% endblock %}

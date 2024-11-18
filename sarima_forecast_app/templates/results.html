@@ -1,0 +1,39 @@
+{% extends "base.html" %} {% block content %}
+<h1>Hasil Penjualan</h1>
+<p>Data penjualan bulanan yang tersedia:</p>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Bulan</th>
+      <th>Tahun</th>
+      <th>Porsi Penjualan</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in data %}
+    <tr>
+      <td>{{ row.no }}</td>
+      <td>{{ row.month }}</td>
+      <td>{{ row.year }}</td>
+      <td>{{ row.porsi }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<!-- Grafik Forecasting -->
+<h2>Grafik Penjualan</h2>
+<img id="forecast-plot" src="" alt="Grafik Forecasting" class="img-fluid" />
+
+<script>
+  // Load the forecast plot dynamically
+  fetch("/forecast_plot")
+    .then((response) => response.text())
+    .then((imageData) => {
+      document.getElementById("forecast-plot").src = "data:image/png;base64," + imageData;
+    });
+</script>
+
+{% endblock %}
