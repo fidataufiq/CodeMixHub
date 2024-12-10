@@ -40,7 +40,7 @@ streamlit_calculator/ │
 3. Jalankan aplikasi Streamlit:
    bash
    streamlit run app.py
-4. Buka aplikasi di browser Anda melalui URL: http://localhost:8501
+4. Buka aplikasi di browser 
 
 ## 🔧 Teknologi yang Digunakan
 
