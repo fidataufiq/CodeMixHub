@@ -15,23 +15,17 @@ Selamat datang di **Kalkulator Sederhana**! Aplikasi ini dibuat menggunakan [Str
 
 ---
 
-## 🖼️ Tangkapan Layar
 
-### **Halaman Utama**
-
-![Halaman Utama](https://via.placeholder.com/600x300.png?text=Halaman+Utama)  
-Antarmuka sederhana untuk memulai navigasi aplikasi.
-
-### **Halaman Kalkulator**
-
-![Halaman Kalkulator](https://via.placeholder.com/600x300.png?text=Halaman+Kalkulator)  
-Masukkan angka dan pilih operasi untuk mendapatkan hasil.
-
----
 
 ## 📂 Struktur Proyek
 
-streamlit_calculator/ │ ├── app.py # File utama untuk menjalankan aplikasi ├── pages/ │ ├── home.py # Halaman utama │ ├── calculator.py # Halaman kalkulator │ └── about.py # Halaman tentang ├── requirements.txt # Daftar dependensi Python └── README.md # Dokumentasi proyek
+streamlit_calculator/ │
+├── app.py # File utama untuk menjalankan aplikasi 
+├── pages/ │ ├── home.py # Halaman utama │ 
+├── calculator.py # Halaman kalkulator 
+│ └── about.py # Halaman tentang
+├── requirements.txt # Daftar dependensi Python 
+└── README.md # Dokumentasi proyek
 
 ## 💡 Cara Menjalankan
 
