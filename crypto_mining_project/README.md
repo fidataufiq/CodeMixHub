@@ -73,7 +73,7 @@ Ini semacam aturan otomatis. Misalnya:
 3. Kamu mining blok:
    - Program coba angka acak sampai hash blok sesuai syarat.
    - Transaksi dalam antrean dimasukin ke blok yang berhasil dimining.
-4. Blok baru ditambahin ke rantai. Sekarang, blockchain mencatat kalau Jovan udah kirim 10 coin ke Luna. Hore! 🎉
+4. Blok baru ditambahin ke rantai. Sekarang, blockchain mencatat kalau Andy udah kirim 10 coin ke Tonny. Hore! 🎉
 
 ## Kenapa Mining Dibuat Sulit? 🤔
 
