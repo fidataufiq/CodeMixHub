@@ -68,7 +68,7 @@ Ini semacam aturan otomatis. Misalnya:
 ## Contoh Cara Kerja 🚀
 
 1. Kamu tambahin transaksi:
-   - "Jovan kirim 10 coin ke Luna."
+   - "Andy kirim 10 coin ke Tonny."
 2. Transaksi masuk antrean (belum dimasukin ke blok).
 3. Kamu mining blok:
    - Program coba angka acak sampai hash blok sesuai syarat.
