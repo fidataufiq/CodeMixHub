@@ -45,7 +45,7 @@ Ini kayak pelayan restoran yang nyambungin pengguna dengan blockchain:
 - Kamu bisa:
 
   - Lihat rantai blok di browser (kayak ngintip buku besar digital).
-  - Tambahin transaksi (misalnya, "Jovan kirim 10 coin ke Luna").
+  - Tambahin transaksi (misalnya, "Andy kirim 10 coin ke Tonny").
   - Nambang blok baru buat masukin transaksi ke blockchain.
 
 - Semua ini dilakukan via antarmuka web yang gampang banget dipake. 😉
